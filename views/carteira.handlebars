@@ -1,0 +1,39 @@
+<header class="text-center">
+            <h2>Minha Carteira</h2>
+</header>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">ATIVO</th>
+            <th scope="col">PREÇO MÉDIO</th>
+            <th scope="col">PREÇO (ATUAL)</th>
+            <th scope="col">DIFERENÇA</th>
+            <th scope="col">QUANTIDADE</th>
+            <th scope="col">PATRIMÓNIO</th>
+            <th scope="col">VARIAÇÃO(HOJE)</th>
+            <th scope="col">VARIAÇÃO(TOTAL)</th>
+            <th scope="col">% EM AÇÕES</th>
+            <th scope="col">% NA CARTEIRA</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        {{#each posts}}
+        <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{ativo}}</td>
+            <td>R${{precomedio}}</td>
+            <td>{{precoatual}}</td>
+            <td class="text-success">{{diferenca}}</td>
+            <td>{{quantidade}}</td>
+            <td>{{patrimonio}}</td>
+            <td class="text-danger">{{variacaohoje}}</td>
+            <td class="text-success">{{variacaototal}}</td>
+            <td>{{porcentagemacoes}}</td>
+            <td>{{porcentagemcarteira}}</td>
+            <td><a href="/deletar/{{id}}"><button type="button" class="btn btn-danger btn-sm">Deletar</button></a></td>
+        </tr>
+        {{/each}}       
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+<header class="text-center">
+    <h2>Adicionar Ativo</h2>
+</header>
+<br>
+
+<form action="/addform" method="POST">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Ativo</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" name="ativo">
+    </div>
+    <div class="row">
+        <div class='col'>
+            <label for="formGroupExampleInput2" class="form-label">Data</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="data">
+        </div>
+        <div class='col'>
+            <label for="formGroupExampleInput2" class="form-label">Quantidade</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="quantidade">
+        </div>
+        <div class='col'>
+            <label for="formGroupExampleInput2" class="form-label">Preço</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" name="preco">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="total-result">
+        <span>TOTAL:</span>
+        <span class="total-result-render"></span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-outline-primary">Salvar</button>
+</form>
